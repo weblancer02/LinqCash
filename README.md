@@ -6,7 +6,7 @@ By: Ramnel Erson Ramos
 - Web server for Problems 2 & 3
 
 ## Problem 1
-- You may create and index and add solutions js file as a script src.
+- You may create an index.html and add solutions js file as a script src.
 - Run the function via console
 ```
 sum_to_n(b)
