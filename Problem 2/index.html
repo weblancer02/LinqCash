@@ -1,0 +1,99 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fancy Form</title>
+
+  <!-- You may add more stuff here -->
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/textinputeffects/normalize.css" /> -->
+  <!-- <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" /> -->
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/textinputeffects/demo.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/textinputeffects/set1.css" /> -->
+
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/particles/particles.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="assets/css/modalWindowEffects/default.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/modalWindowEffects/component.css" />
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+
+
+
+</head>
+
+<body>
+  <div class="md-modal md-effect-9" id="modal-9">
+    <div class="md-content">
+      <h3>BITCON SENT!</h3>
+      <div>
+        <p></p>
+
+        <button class="md-close">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- You may wrap the form in your own elements if necessary. -->
+  <div class="form-wrapper">
+    <form autocomplete="off">
+
+      <div class="field-wrap">
+        <span class="error-address input-error"></span>
+        <label for="input-address">Bitcoin Address</label>
+        <input id="input-address" spellcheck="false" class="effect-1" placeholder="16q4PinynazaMYfv24juNLkbjkDQxJo2dc" autocomplete="off"
+        />
+        <span class="focus-border"></span>
+      </div>
+
+      <div class="field-wrap">
+        <span class="error-amount input-error"></span>
+        <label for="input-amount">Amount to send</label>
+        <input id="input-amount" class="effect-1" placeholder="0.0000" autocomplete="off" />
+        <span class="focus-border"></span>
+      </div>
+
+      <div class="field-wrap">
+        <span class="error-otp input-error"></span>
+        <label for="input-otp">OTP Authentication</label>
+        <input type="number" id="input-otp" class="effect-1" placeholder="SMS OTP" autocomplete="off" />
+        <span class="focus-border"></span>
+      </div>
+
+      <button id="submit" type="submit" class="md-trigger" data-modal="modal-9">SEND BTC</button>
+    </form>
+  </div>
+
+  <!-- count particles -->
+  <div class="count-particles">
+    <span class="js-count-particles"></span>
+  </div>
+
+  <!-- particles.js container -->
+  <div class="md-overlay"></div><!-- the overlay element -->
+  <div id="particles-js"></div>
+
+  <script src="assets/js/lib/particles/particles.min.js"></script>
+  <script src="assets/js/lib/particles/app.js"></script>
+  <script src="assets/js/lib/modalWindowEffects/modernizr.custom.js"></script>
+
+
+  <!-- classie.js by @desandro: https://github.com/desandro/classie -->
+  <script src="assets/js/lib/modalWindowEffects/classie.js"></script>
+  <script src="assets/js/lib/modalWindowEffects/modalEffects.js"></script>
+
+  <!-- for the blur effect -->
+  <!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+  <script>
+    // this is important for IEs
+    var polyfilter_scriptpath = 'assets/js/lib/modalWindowEffects';
+  </script>
+  <script src="assets/js/lib/modalWindowEffects/cssParser.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
